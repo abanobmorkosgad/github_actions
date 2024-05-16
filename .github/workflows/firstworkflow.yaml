@@ -31,6 +31,6 @@ jobs:
           REPO: abanobmorkos10/java-maven
           IMAGE_TAG: 10
         run: |
-          docker build -t ${{ REPO }}:${{ IMAGE_TAG }} . 
-          docker push ${{ REPO }}:${{ IMAGE_TAG }}
+          docker build -t $REPO:$IMAGE_TAG . 
+          docker push $REPO:$IMAGE_TAG
   
